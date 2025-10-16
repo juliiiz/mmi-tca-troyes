@@ -8,8 +8,6 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class BuggyController extends AbstractController
 {
-
-
     #[Route('/buggy', name: 'app_buggy')]
     public function index(): JsonResponse
     {
@@ -22,8 +20,8 @@ class BuggyController extends AbstractController
     private function getData(): array
     {
         return [
-            "key1" => 1,
-            "key2" => 2,
+            'key1' => 1,
+            'key2' => 2,
         ];
     }
 }
